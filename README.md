@@ -1,1 +1,1 @@
-just some practice demos from [React Tutorial](https://www.w3schools.com/REACT)
+Just some demos, learned from [React Tutorial](https://www.w3schools.com/REACT).
