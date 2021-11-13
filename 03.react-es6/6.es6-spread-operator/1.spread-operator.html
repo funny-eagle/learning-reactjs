@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const one = [1, 2, 3];
+    const two = [4, 5, 6];
+    const combined = [...one, ...two];
+    document.write('<p>' + combined + '</p>');
+
+    const numbers = [1, 2, 3, 4, 5, 6];
+    const [a, b, ...rest] = numbers;
+
+    document.write('a: ' + a + '<br/>');
+    document.write('b: ' + b + '<br/>');
+    document.write('rest: ' + rest + '<br/>');
+
+    const myVehicle = {
+        brand: 'Ford',
+        model: 'Mustang',
+        color: 'red'
+    }
+
+    const updateMyVehicle = {
+        type: 'car',
+        year: 2021,
+        color: 'yellow'
+    }
+
+    const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+    document.write(myUpdatedVehicle.year);
+</script>
+</body>
+</html>

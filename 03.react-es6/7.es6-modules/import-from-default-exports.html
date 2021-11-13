@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module">
+        // You can export a function or variable from any file.
+        import {name, age} from "./person.js";
+
+        document.getElementById("root").innerHTML= name + " , " + age;
+    </script>
+</body>
+</html>
