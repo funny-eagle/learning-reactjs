@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <input type="button" id="btn" value="button"/>
+  <script type="text/javascript">
+      // With a regular function, this represents the object that called the function
+      class Header {
+          constructor() {
+            this.color = "Red";
+          }
+
+          // Regular function
+          changeColor = () => document.getElementById("demo").innerHTML += this;
+
+      }
+      const myHeader = new Header();
+
+      // the window object calls the function
+      window.addEventListener("load", myHeader.changeColor);
+
+      // the button object calls the function
+      document.getElementById("btn").addEventListener("click", myHeader.changeColor)
+
+  </script>
+</body>
+</html>

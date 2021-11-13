@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <p id="demo">
+
+  </p>
+
+  <script type="text/javascript">
+      hello = function(){
+          return "Hello, regular function!";
+      }
+
+      // arrow function
+      hello1 = () => {
+          return "Hello, Arrow function 1!"
+      }
+
+      // It gets shorter! If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword:
+      hello2 = () => "Hello, Arrow function 2!";
+
+      // arrow function with parameters
+      hello3 = (param) => "Hello, " + param;
+
+      // In fact, if you have only one parameter, you can skip the parentheses as well:
+      hello4 = param => "Hello, " + param;
+
+      document.write(hello() + '<br/>');
+      document.write(hello1() + '<br/>');
+      document.write(hello2() + '<br/>');
+      document.write(hello3("Jason") + '<br/>');
+      document.write(hello4("Funny") + '<br/>');
+
+      document.getElementById("demo").innerHTML = hello4("Seven Yang");
+
+  </script>
+</body>
+</html>

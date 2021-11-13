@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //Destructuring makes it easy to extract only what is needed.
+
+        // destructing arrays
+
+        // old way
+        const vehicles = ['mustang', 'f-150', 'expedition'];
+        const car = vehicles[0];
+        const truck = vehicles[1];
+        const suv = vehicles[2];
+
+        // new way with destructuring
+        const [c, t, s] = vehicles;
+
+        // If we only want the car and suv we can simply leave out the truck but keep the comma:
+        const [a, , b] = vehicles;
+
+        function calculate(a, b){
+            const add = a+b;
+            const subtract = a-b;
+            const multiply = a * b;
+            const divide = a / b;
+            return [add, subtract, multiply, divide];
+        }
+
+        const [add, subtract, multiply, divide] = calculate(5, 6)
+        document.write("<p>destructuring</p>");
+        document.write(add + "<br/>");
+        document.write(subtract + "<br/>");
+        document.write(multiply + "<br/>");
+        document.write(divide);
+    </script>
+</body>
+</html>

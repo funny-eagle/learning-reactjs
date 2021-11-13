@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        // The .map() method allows you to run a function on each item in the array, returning a new array as the result.
+        // In React, map() can be used to generate lists.
+
+        const myArray = ['apple', 'banana', 'orange'];
+        const myList = myArray.map((item) => <p>{item}</p>)
+        ReactDOM.render(myList, document.getElementById("root"));
+    </script>
+</body>
+</html>

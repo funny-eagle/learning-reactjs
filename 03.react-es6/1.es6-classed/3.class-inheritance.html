@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+<!--    The super() method refers to the parent class.-->
+
+<!--    By calling the super() method in the constructor method, we call the parent's constructor method and gets access to the parent's properties and methods.-->
+        <script type="text/javascript">
+            class Car {
+                constructor(name) {
+                    this.brand = name;
+                }
+
+                present(){
+                    return 'I hava a ' + this.brand;
+                }
+            }
+
+            class Model extends Car {
+                constructor(name, mod) {
+                    super(name);
+                    this.model = mod;
+                }
+
+                show(){
+                    return this.present() + ', it is a ' + this.model
+                }
+            }
+
+            const myCar = new Model("Buick", "Envision");
+            document.write(myCar.show());
+        </script>
+    </body>
+</html>

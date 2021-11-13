@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    const vehicle = {
+        brand: 'Ford',
+        model: 'Mustang',
+        type: 'car',
+        year: 2021,
+        color: 'red'
+    }
+
+    document.write(myVehicle(vehicle));
+
+    function myVehicle(vehicle) {
+        const message = 'My ' + vehicle.type + ' is a ' + vehicle.color + ' ' + vehicle.brand + ' ' + vehicle.model + '.';
+        return message;
+    }
+
+
+    const vehicle2 = {
+        brand: 'Ford',
+        model: 'Mustang',
+        type: 'car',
+        year: 2021,
+        color: 'red',
+        registration: {
+            city: 'Houston',
+            state: 'Texas',
+            country: 'USA'
+        }
+    }
+
+    document.write('<p>'+vehicleMessage(vehicle2)+'</p>')
+
+    function vehicleMessage({model, registration: {state}}) {
+        const message = 'My ' + model + ' is registered in ' + state + '.';
+        return message;
+    }
+</script>
+</body>
+</html>
