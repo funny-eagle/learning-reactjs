@@ -45,7 +45,7 @@ function Car(){
 
 现在有一个名为Car的组件，返回一个<h2>元素。
 
-在程序中使用这个组件爱你，语法类似HTML:`<Car/>`
+在程序中使用这个组件，语法类似HTML:`<Car/>`
 
 ```javascript
 ReactDOM.render(<Car/>, document.getElementById('root'));
